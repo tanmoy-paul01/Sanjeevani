@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('images/front.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+h1 {
+    color: #06c83a;
+    font-size: 10em;
+    font-family: 'Times New Roman';
+    margin-bottom: 10px; /* Adjust the margin here */
+}
+
+.tagline {
+    color: #0b193f;
+    font-size: 2em;
+    font-family: cursive;
+    font-weight: bold;
+    margin-bottom: 120px; /* Adjust the margin here */
+    background-color: rgb(238, 231, 231);
+    border-radius: 6px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4CAF50;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+/* Style the navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Navigation links */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Active/current link */
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  /* Style the container */
+  .container {
+    padding: 60px 16px; /* Add padding to the container to make space for the fixed navigation bar */
+    margin-top: 40px; /* Adjust the margin to create space below the navigation bar */
+  }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fefefe;
+    padding: 20px;
+    border: 1px solid #888;
+    z-index: 1;
+  }
+  
+
+  
+  
+ 
+  

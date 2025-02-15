@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Sign Up for Sanjivani</title>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign Up for Sanjivani</h2>
+        <form onsubmit="saveCredentials(event)">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+
+    <script>
+        function saveCredentials(event) {
+            event.preventDefault();
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'Admin' && password === 'password') {
+                alert("You cannot sign up with the username 'Admin'. Please choose a different username.");
+            } else {
+                localStorage.setItem('username', username);
+                localStorage.setItem('password', password);
+                alert("Sign up successful. Redirecting to the homepage.");
+                window.location.href = "front.html";
+            }
+        }
+    </script>
+</body>
+</html>

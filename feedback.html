@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<style>
+
+/* CSS code for styling the form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(179, 208, 121);
+}
+
+h2 {
+    margin-top: 20px;
+    text-align: center;
+    height: 30px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+textarea {
+   /* width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;*/
+
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    resize: vertical;
+    min-height: 100px;
+    background-color: rgb(157, 161, 157);
+    color: black;
+
+}
+input{
+    background-color: rgb(59, 156, 75);
+    color: black;
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+</style>
+<body>
+    <h2> Feedback For Sanjivani</h2>
+    <form id="feedbackForm">
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea><br><br>
+        <input type="submit" value="Submit" onclick="submitFeedback()">
+    </form>
+
+    <script>
+        // JavaScript code to handle form submission
+function submitFeedback() {
+    // You can customize this function to handle the feedback submission process.
+    // For example, you can use AJAX to send the feedback data to the server.
+    alert("Feedback submitted! Thank you for your valuable input.");
+}
+
+    </script>
+</body>
+
+</html>

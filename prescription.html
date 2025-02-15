@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prescription Form</title>
+    <link rel="stylesheet" href="prescription.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Prescription Form</h2>
+        <form id="prescription-form" onsubmit="generatePrescription(event)">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" required><br><br>
+            <label for="gender">Gender:</label><br>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select><br><br>
+            <label for="disease">Select Disease:</label><br>
+            <select id="disease" name="disease" required>
+                <option value="">Select a Disease</option>
+                <option value="Headache">Headache</option>
+                    <option value="Stomachache">Stomachache</option>
+                    <option value="Cough">Cough</option>
+                    <option value="Fever">Fever</option>
+                    <option value="Sore Throat">Sore Throat</option>
+                    <option value="Indigestion">Indigestion</option>
+                    <option value="Diarrhea">Diarrhea</option>
+                    <option value="Nausea">Nausea</option>
+                    <option value="Insomnia">Insomnia</option>
+                    <option value="Anxiety">Anxiety</option>
+                    <option value="Common Cold">Common Cold</option>
+                    <option value="Allergies">Allergies</option>
+                    <option value="Sinusitis">Sinusitis</option>
+                    <option value="Asthma">Asthma</option>
+                    <option value="Arthritis">Arthritis</option>
+                    <option value="Back Pain">Back Pain</option>
+                    <option value="Migraine">Migraine</option>
+                    <option value="Heartburn">Heartburn</option>
+                    <option value="Hiccups">Hiccups</option>
+                    <option value="Constipation">Constipation</option>
+                    <option value="High Blood Pressure">High Blood Pressure</option>
+                    <option value="Acne">Acne</option>
+                    <option value="Eczema">Eczema</option>
+                    <option value="Rash">Rash</option>
+                    <option value="Stress">Stress</option>
+                    <option value="Depression">Depression</option>
+                    <option value="Obesity">Obesity</option>
+                    <option value="Osteoporosis">Osteoporosis</option>
+                    <option value="Gout">Gout</option>
+                    <option value="Anemia">Anemia</option>
+                    <option value="Bronchitis">Bronchitis</option>
+                    <option value="Hypothyroidism">Hypothyroidism</option>
+                    <option value="Hyperthyroidism">Hyperthyroidism</option>
+                    <option value="Kidney Stones">Kidney Stones</option>
+                    <option value="Liver Disease">Liver Disease</option>
+                    <option value="Ulcers">Ulcers</option>
+                    <option value="Gallstones">Gallstones</option>
+                    <option value="Malaria">Malaria</option>
+                    <option value="Dengue Fever">Dengue Fever</option>
+                    <option value="Chikungunya">Chikungunya</option>
+            </select><br><br>
+            <button type="submit">Generate Prescription</button>
+        </form>
+        <div id="prescription"></div>
+    </div>
+
+    <script src="prescription.js"></script>
+    <script src="./node_modules/web3/dist/web3.min.js"></script>
+    
+
+
+</body>
+</html>

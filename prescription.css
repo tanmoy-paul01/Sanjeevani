@@ -1,0 +1,101 @@
+/* style.css */
+
+#prescription {
+    border: 2px solid #3d241f;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f9f5f4;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#prescription h3 {
+    color: #3d241f;
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+#prescription p {
+    color: #735c55;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+#prescription p:last-child {
+    margin-bottom: 0;
+}
+
+#prescription p:nth-child(4) {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+#prescription p:nth-child(5) {
+    color: #3d241f;
+    font-size: 1.2em;
+}
+/* style.css */
+
+#prescription-form {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+}
+
+#prescription-form h2 {
+    color: #3d241f;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#prescription-form label {
+    color: #3d241f;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+
+#prescription-form input[type="text"],
+#prescription-form input[type="number"],
+#prescription-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    background-color: #8fd391;
+}
+
+#prescription-form select {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+#prescription-form input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+}
+
+#prescription-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+body{
+    background-color: rgb(237, 240, 239);
+}
