@@ -1,1 +1,1 @@
-# Sanjeevani
+# Sanjeevani Ayurved
